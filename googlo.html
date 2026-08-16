@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>googlo.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="googlo.css">
+    
+
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <div id="logo">
+                <label for="search-bar">Google</label>
+                <!--logo--> 
+                
+            </div>
+            <div>
+                <!--search bar-->
+                <input id="search-bar" type="text" placeholder=" Ask google">
+            </div>
+            <div id="side-menus">
+                <div id="search-icon-container">
+                     <!--share -menu - Profile-->
+                     <button id="search-icon-btn">
+                     &#x1F50D;   
+                    </button>
+                </div >
+                <div id="menu-icon-container">
+                    &#9776; <!--menu icon-->
+                </div>
+                <div>
+
+                    &#9940; <!--profile icon-->
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <div id="result-types">
+        <div id="result-type-all" class = "result-type all" onclick="resultTypes()"><a>All</a></div>
+        <div id="result-type-images" class = "result-type image"><a>Images</a></div>
+        <div id="result-type-videos" class = "result-type video"><a>Videos</a></div>
+        <div id="result-type-news" class = "result-type news"><a title="NA">News</a></div>
+        <div id="result-type-more" class = "result-type more"><a title="NA">More &#9663;</a></div>
+        <div id="result-type" class = "result-type "><a title = "No flights"> &#x2708;</a></div><!--&#9992; in dec-->
+    </div>
+    <hr width="99%" size="1" color="#4d5156">
+       <div id="search-result-name">
+        <!--JS if-else for "did you mean AND OR result name in h1 and subscript"-->
+        Warner Bros.<span> did you mean Batman</span> showing results for null
+    </div>
+     <br>
+    <div id="search-results">
+        <!-- Search results will be displayed here -->
+         <div id="search-result-box">
+            <div id="search-result-left-box">
+                <div id = "image-container-zero">
+                    <div id="image-container-left">
+                         <img src="C:\Users\mshuv\OneDrive\Pictures\california.jpg" alt="Image 1">
+                    </div>
+
+                   <div id="image-container-right">
+                        <img src="C:\Users\mshuv\OneDrive\Pictures\newyork.jpg" alt="Image 1">
+                        <img src="C:\Users\mshuv\OneDrive\Pictures\tokyo.jpg" alt="Image 2">
+                   </div>
+              </div>
+            </div>
+
+            <div id="search-result-right-box">
+                <div id="basic-info"><b>Movie</b>
+                    <br><br>
+                    <b>Title:</b> Inception<br>
+                    <b>Director:</b> Christopher Nolan<br>
+                    <subscript>Release Year:</subscript> 2010<br>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div id="result-container-zero">
+        <div id="result-container-left">
+            <div id="result-sites-container">
+            <div class = "search-result-site">
+                <div class="search-result-site-box1">
+                <div class="site-logo-container"><img src="C:\Users\mshuv\OneDrive\Pictures\tokyo.jpg" alt="tokyo"></div>
+                <div class="search-result-nameURL-container">
+                        <div class="site-name">Wikipedia</div>
+                        <div class="site-url">https://www.wikipedia.org</div>
+                </div>
+                </div>
+                <div class="search-result-site-box2">
+                <div class="site-result-title">Spider Man</div> 
+                <div class="site-description">Site description goes here. This is a brief summary of the site content.</div>
+            </div>
+            </div>
+            <div class = "search-result-site">
+            <div class="search-result-site-box1">
+            <div class="site-logo-container"><img src="C:\Users\mshuv\OneDrive\Pictures\newyork.jpg" alt="logo"></div>
+            <div class="search-result-nameURL-container">
+                    <div class="site-name">Throttle House</div>
+                    <div class="site-url">https://www.foer.org</div>
+            </div>
+            </div>
+            <div class="search-result-site-box2">
+            <div class="site-result-title">Throttle House</div> 
+            <div class="site-description">Site description goes here. This is a brief summary of the site content.</div>
+            </div>
+            </div>
+            <div class = "search-result-site">
+            <div class="search-result-site-box1">
+            <div class="site-logo-container"><img src="C:\Users\mshuv\OneDrive\Pictures\tokyo.jpg" alt="tokyo"></div>
+            <div class="search-result-nameURL-container">
+                    <div class="site-name">Wikipedia</div>
+                    <div class="site-url">https://www.wikipedia.org</div>
+            </div>
+            </div>
+            <div class="search-result-site-box2">
+            <div class="site-result-title">Spider Man</div> 
+            <div class="site-description">Site description goes here. This is a brief summary of the site content.</div>
+            </div>
+            </div>
+</div>
+        </div>
+        <div id="page-seperator">
+        <hr class="result-seperator">
+        </div>
+        <div id="result-container-right">
+            <span style="margin-bottom: 18px; padding: 5px; font-size: 18px;">About</span>
+            <div id="about">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Quo praesentium voluptates eveniet rerum repellendus cumque quasi? Quae, placeat
+                 , sequi ex culpa, at veritatis rem quas dolores nulla cumque nostrum repellat!
+            </div>
+            <div id="info-key-values-container">
+                <div class="info-key">Country</div><div class="info-value">ireland</div>
+                 <div class="info-key">Year</div><div class="info-value">2018</div>
+                 <div class="info-key">Acholades</div><div class="info-value">Oscars, OBE</div>
+                 <div class="info-key">Country</div><div class="info-value">ireland</div>
+                 <div class="info-key">current</div><div class="info-value">N/A</div>
+            </div>
+        </div>
+    </div>
+ <script src="C:\Users\mshuv\OneDrive\Desktop\Projects\JS\googlo.js"></script>
+</body>
+</html>
