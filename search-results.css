@@ -1,0 +1,118 @@
+    #result-sites-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    }
+    #result-container-zero {
+    display: grid;
+    grid-template-columns: 2fr 6px 1fr;
+    gap: 5px;
+    margin-top: 10px;
+    }
+    .result-seperator {
+    border: none;
+    border-left: 1px solid #3d2c2e;
+    height: 95%;
+    width: 2px;
+    }
+    #result-container-left, #result-container-right {
+    border-radius: 10px;
+    height:900px;
+    font-family: 'Google Sans Flex', Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #search-results {
+    height: 250px;
+    overflow-y:scroll;
+    }
+    #search-result-box {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #4d5156;
+    height: 200px;
+    }
+    #search-result-left-box {
+    /* height: 600px;
+    width: 100%;*/
+    background-color: #22242A;
+    border-radius:20px;
+    margin-right: 8px;
+    flex: 2;
+
+    }
+    #search-result-right-box {
+    background-color: #22242A;
+    flex: 1;
+    }
+    #search-result-name {
+    padding: 5px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 4px;
+    }
+    #search-result-name span {
+    color: rgb(45, 134, 212);
+    font-style: italic;
+    font-size: 14px;
+    }
+    .search-result-site {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    }
+    .search-result-site-box1 {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    column-gap: 0px;
+    }
+    .search-result-nameURL-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;
+    }
+    .site-logo-container img {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    margin-left: 10px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border:none;
+    user-select: none;
+    cursor: not-allowed;
+    }
+    .site-name {
+    font-size: 12px;
+    padding: 5px;
+    }
+    .search-result-site-box2 {
+    display: grid;        
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;}
+    .site-logo-container {
+    width: 60px;
+    }
+
+    .site-result-title {
+    font-size: 20px;
+    color:#99c3ff;
+    padding: 5px;
+    transition-property: text-decoration;
+    transition-duration: 0.3s;
+    }
+    .site-result-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    }
+    .site-url {
+    font-size: 12px;
+    color: #9E9E9E;
+    padding: 5px;
+    }
+    .site-description, .site-url {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9E9E9E;
+    padding-top: 0;
+    padding-left: 5px;
+    }
